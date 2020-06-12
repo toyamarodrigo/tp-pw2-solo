@@ -23,3 +23,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+<?php
+    date_default_timezone_set('America/Argentina/Buenos_Aires');
+?>

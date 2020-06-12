@@ -7,9 +7,11 @@
 </head>
 
 <body>
-  <?php $page == 'about'; ?>
-  <?php require "./includes/header.php" ?>
-  <?php require "./includes/bradcam.php" ?>
+  <?php 
+  $page = 'about'; 
+  require "./includes/header.php";
+  require "./includes/bradcam.php";
+  ?>
 
   <div class="about_story">
     <div class="container">
@@ -71,14 +73,16 @@
     </div>
   </div>
 
-  <?php require "./includes/video_area.php" ?>
-  <?php require "./includes/travel_var.php" ?>
-  <?php require "./includes/testimonials.php" ?>
-  <?php require "./includes/recent_trips.php" ?>
-
-  <?php require "./includes/footer.php" ?>
-  <?php require "./includes/modal.php" ?>
-  <?php require "./includes/scripts.php" ?>
+  <?php 
+  require "./includes/video_area.php";
+  require "./includes/travel_var.php";
+  require "./includes/testimonials.php";
+  require "./includes/recent_trips.php";
+  
+  require "./includes/footer.php";
+  require "./includes/modal.php";
+  require "./includes/scripts.php";
+  ?>
 </body>
 
 </html>

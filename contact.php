@@ -8,12 +8,11 @@
 
 <body>
     <?php
-    $page == 'contact';
+    $page = 'contact';
     require "./includes/header.php";
     require "./includes/bradcam.php";
     ?>
 
-    <!-- ================ contact section start ================= -->
     <section class="contact-section">
         <div class="container">
             <div class="row">
@@ -75,11 +74,12 @@
             </div>
         </div>
     </section>
-    <!-- ================ contact section end ================= -->
 
-    <?php require "./includes/footer.php" ?>
-    <?php require "./includes/modal.php" ?>
-    <?php require "./includes/scripts.php" ?>
+    <?php
+    require "./includes/footer.php";
+    require "./includes/modal.php";
+    require "./includes/scripts.php";
+    ?>
 </body>
 
 </html>

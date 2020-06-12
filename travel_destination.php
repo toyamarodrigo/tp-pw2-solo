@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <?php require "./includes/head.php" ?>
@@ -8,7 +8,9 @@
 
 <body>
     <?php
-    $page == 'travel';
+    $str_data = file_get_contents("./json/paises.json");
+    $productos = json_decode($str_data, true);
+    $page = 'travel';
     require "./includes/header.php";
 
     require "./includes/bradcam.php";

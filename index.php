@@ -7,16 +7,18 @@
 </head>
 
 <body>
-  <?php 
-  $page == 'index';
+  <?php
+  $str_data = file_get_contents("./json/paises.json");
+  $productos = json_decode($str_data, true);
+  $page = 'index';
+
   require "./includes/header.php";
   require "./includes/slider.php";
-  
+
   require "./includes/filter.php";
 
-  require "./includes/popular_dest.php";
-  require "./includes/newsletter.php";
   require "./includes/popular_places.php";
+  require "./includes/newsletter.php";
   require "./includes/video_area.php";
   require "./includes/travel_var.php";
   require "./includes/testimonials.php";

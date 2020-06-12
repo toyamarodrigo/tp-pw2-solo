@@ -2550,11 +2550,11 @@ h3 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: space-between;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
 }
 
 @media (max-width: 767px) {
@@ -2566,7 +2566,7 @@ h3 {
 
 /* line 29, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_where_to_go.scss */
 .where_togo_area .search_wrap .input_field {
-  width: 220px;
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6682,3 +6682,22 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+input[type="radio"] {
+  display: none;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 30px;
+}
+
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}

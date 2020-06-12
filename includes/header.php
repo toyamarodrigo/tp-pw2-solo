@@ -15,10 +15,10 @@
               <div class="main-menu  d-none d-lg-block">
                 <nav>
                   <ul id="navigation">
-                    <li><a class="active" href="index.php">home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a class="" href="travel_destination.php">Destination</a></li> 
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a <?php echo ($page == 'index') ? "class='active'" : ""; ?> href="index.php">home</a></li>
+                    <li><a <?php echo ($page == 'about') ? "class='active'" : ""; ?> href="about.php">About</a></li>
+                    <li><a <?php echo ($page == 'travel') ? "class='active'" : ""; ?> href="travel_destination.php">Destination</a></li>
+                    <li><a <?php echo ($page == 'contact') ? "class='active'" : ""; ?> href="contact.php">Contact</a></li>
                   </ul>
                 </nav>
               </div>
